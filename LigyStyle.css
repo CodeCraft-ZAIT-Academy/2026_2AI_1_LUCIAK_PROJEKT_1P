@@ -1,0 +1,32 @@
+.ligy-zoznam {
+    width: 400px;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.liga-riadok {
+    margin-bottom: 15px;
+}
+
+.liga-btn {
+    padding: 22px;
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    border: 3px solid lightgreen;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 3px solid lightgreen; 
+    display: block; 
+    width: 100%;
+}
+
+.liga-btn:hover {
+    background-color: rgb(7, 139, 7);
+}
+
+.nadpis {
+    text-align: center;
+    padding: 30px;
+    color: lightgreen;
+}
