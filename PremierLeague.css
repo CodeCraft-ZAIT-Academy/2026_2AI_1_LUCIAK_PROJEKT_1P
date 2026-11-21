@@ -1,0 +1,75 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 2px solid lightgreen;
+}
+
+header h1 {
+    color: lightgreen;
+}
+
+header button {
+    background-color: black;
+    color: white;
+    border: 2px solid lightgreen;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+header button:hover {
+    background-color: green;
+}
+
+h2 {
+    color: lightgreen;
+    text-align: center;
+    font-size: 35px;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+.tabulka-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #151515;
+}
+
+th {
+    background-color: lightgreen;
+    color: black;
+    padding: 15px;
+}
+
+td {
+    padding: 13px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+td:nth-child(2) {
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #252525;
+}

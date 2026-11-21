@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -6,36 +7,78 @@
     <title>Top 5 líg - Football Hub</title>
     <link rel="stylesheet" href="LigyStyle.css">
 </head>
-<body style="background-color: black;">
 
-    <header>
-        <h1 style="color: lightgreen;">⚽ Football Hub</h1>
-         <button onclick="location.href='index.html'" style="background-color: black; color: white; margin-left: 1600px;padding:5px;">Domov</button>
-        <nav>
-        </nav>
-    </header>
+<body>
+
+<header>
+    <h1>⚽ Football Hub</h1>
+
+    <button class="domov" onclick="location.href='index.html'">
+        Domov
+    </button>
+</header>
 
 <main>
-    <h2 class="nadpis">Top 5 líg</h2>
-<div style="width: 400px; max-width: 100%; margin: 30px auto;">
 
-      <div class="ligy-zoznam">
-    <div class="liga-riadok">
-        <button class="liga-btn" style="background-color: white;color: black;">󠁧Premier League</button>
+    <div class="uvod">
+        <p class="maly-nadpis">SVETOVÝ FUTBAL</p>
+
+        <h2 class="nadpis">TOP 5 LÍG</h2>
+
+        <p class="popis">
+            Objav najlepšie futbalové ligy Európy
+        </p>
     </div>
-    <div class="liga-riadok">
-        <button class="liga-btn" style="background-color: yellow;color: red;">La Liga</button>
+
+    <div class="ligy-zoznam">
+
+        <div class="liga-riadok">
+            <button class="liga-btn" onclick="location.href='PremierLeague.html'">
+                <div class="cislo">01</div>
+                <div>Premier League</div>
+                <div class="sipka">→</div>
+            </button>
+        </div>
+
+        <div class="liga-riadok">
+            <button class="liga-btn" onclick="location.href='Laliga.html'">
+                <div class="cislo">02</div>
+                <div>La Liga</div>
+                <div class="sipka">→</div>
+            </button>
+        </div>
+
+        <div class="liga-riadok">
+            <button class="liga-btn" onclick="location.href='SeriaA.html'">
+                <div class="cislo">03</div>
+                <div>Serie A</div>
+                <div class="sipka">→</div>
+            </button>
+        </div>
+
+        <div class="liga-riadok">
+            <button class="liga-btn" onclick="location.href='Bundesliga.html'">
+                <div class="cislo">04</div>
+                <div>Bundesliga</div>
+                <div class="sipka">→</div>
+            </button>
+        </div>
+
+        <div class="liga-riadok">
+            <button class="liga-btn" onclick="location.href='Ligue1.html'">
+                <div class="cislo">05</div>
+                <div>Ligue 1</div>
+                <div class="sipka">→</div>
+            </button>
+        </div>
+
     </div>
-    <div class="liga-riadok">
-        <button class="liga-btn" style="background-color: lightgreen;color: black;">Serie A</button>
-    </div>
-    <div class="liga-riadok">
-        <button class="liga-btn" style="background-color: red;">Bundesliga</button>
-    </div>
-    <div class="liga-riadok">
-        <button class="liga-btn" style="background-color: aqua;color: black;">Ligue 1</button>
-    </div>
-</div>
+
+    <footer>
+        FOOTBALL HUB © 2026 | VŠETKO O FUTBALE
+    </footer>
+
 </main>
+
 </body>
 </html>

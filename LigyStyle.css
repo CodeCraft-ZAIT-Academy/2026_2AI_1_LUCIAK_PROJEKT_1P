@@ -1,32 +1,159 @@
-.ligy-zoznam {
-    width: 400px;
-    max-width: 100%;
-    margin: 30px auto;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.liga-riadok {
+body {
+    background: linear-gradient(135deg, #050b08, #101b14, #050505);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+header {
+    height: 85px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(144, 238, 144, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    color: lightgreen;
+    font-size: 29px;
+    letter-spacing: 1px;
+}
+
+.domov {
+    padding: 11px 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid lightgreen;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.domov:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+
+.uvod {
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+
+.maly-nadpis {
+    color: lightgreen;
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
-.liga-btn {
-    padding: 22px;
-    font-size: 22px;
+.nadpis {
+    font-size: 48px;
     color: white;
-    background-color: black;
-    border: 3px solid lightgreen;
-    border-radius: 14px;
-    cursor: pointer;
-    border: 3px solid lightgreen; 
-    display: block; 
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.popis {
+    color: #a5b5a9;
+    font-size: 16px;
+}
+
+
+.ligy-zoznam {
+    width: 520px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+.liga-riadok {
+    margin-bottom: 16px;
+}
+
+.liga-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    padding: 22px 25px;
+    background: #111a14;
+    color: white;
+    border: 1px solid #344638;
+    border-left: 5px solid lightgreen;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .liga-btn:hover {
-    background-color: rgb(7, 139, 7);
+    transform: translateX(8px);
+    background-color: #1c3022;
+    border-color: lightgreen;
+    box-shadow: 0 5px 20px rgba(144, 238, 144, 0.15);
 }
 
-.nadpis {
-    text-align: center;
-    padding: 30px;
+.cislo {
     color: lightgreen;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.sipka {
+    color: lightgreen;
+    font-size: 27px;
+    transition: 0.3s;
+}
+
+.liga-btn:hover .sipka {
+    transform: translateX(7px);
+}
+
+
+footer {
+    text-align: center;
+    color: #657568;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 65px;
+    padding: 25px;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .nadpis {
+        font-size: 36px;
+    }
+
+    .liga-btn {
+        font-size: 17px;
+        padding: 19px;
+    }
+
+    .uvod {
+        margin-top: 45px;
+    }
 }
